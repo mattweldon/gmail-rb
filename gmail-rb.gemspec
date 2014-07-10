@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'gmailrb/version'
+require 'gmail-rb/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "gmailrb"
-  spec.version       = Gmail::Rb::VERSION
+  spec.name          = "gmail-rb"
+  spec.version       = Gmail::VERSION
   spec.authors       = ["Matt Weldon"]
   spec.email         = ["matt.weldon@gmail.com"]
   spec.description   = %q{TODO: Write a gem description}
