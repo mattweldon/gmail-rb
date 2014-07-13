@@ -42,6 +42,12 @@ class App < Sinatra::Base
 
   end
 
+  # Users
+  #
+  get '/user/profile' do
+    profile = Gmail::User.new(session['oauth.tokens']).profile
+    "UID => #{profile.uid}, FIRST NAME => #{profile.first_name}"
+  end
 
   private
 

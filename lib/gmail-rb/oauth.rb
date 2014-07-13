@@ -71,7 +71,7 @@ module Gmail
     #   email         - 
     #
     def token_acquisition(auth_code)
-      response = connection.post '/o/oauth2/token', {
+      token_response = connection.post '/o/oauth2/token', {
         'code' => auth_code,
         'client_id' => @client_id,
         'client_secret' => @client_secret,
@@ -80,7 +80,13 @@ module Gmail
         'grant_type' => 'authorization_code'
       }
 
-      token_hash = JSON.parse(response.body)
+      token_hash = JSON.parse(token_response.body)
+
+      user_response = connection.post '/', {
+        
+      }
+
+      puts token_hash
 
       {
         :access_token => token_hash.fetch("access_token"),
