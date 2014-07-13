@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Gmail::VERSION
   spec.authors       = ["Matt Weldon"]
   spec.email         = ["matt.weldon@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = "Simple wrapper around the GMail REST API"
+  spec.summary       = "Simple wrapper around the GMail REST API"
   spec.homepage      = ""
   spec.license       = "MIT"
 
